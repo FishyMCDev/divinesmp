@@ -1,0 +1,76 @@
+{
+  "partnerChannelId": "YOUR_PARTNER_CHANNEL_ID",
+  "submissionChannelId": "YOUR_SUBMISSION_CHANNEL_ID",
+  "divineGuildId": "YOUR_DIVINE_GUILD_ID",
+  "partnerRoleId": "YOUR_PARTNER_ROLE_ID",
+  "allowedReviewerRoleIds": ["REVIEWER_ROLE_ID_1", "REVIEWER_ROLE_ID_2"],
+  "adminRoleIds": ["ADMIN_ROLE_ID_1"],
+  "acceptMessage": "Thank you for partnering with DivineSMP. We look forward to growing together!",
+  "partnerEmbed": {
+    "title": "💼 DivinePartners — Partner Application",
+    "description": "Want to partner with **DivineSMP**? Click the button below to begin your application. Make sure your server meets our requirements before applying.",
+    "color": "#5865F2",
+    "thumbnail": "https://cdn.discordapp.com/embed/avatars/0.png",
+    "fields": [
+      {
+        "name": "📋 Requirements",
+        "value": "• Minimum 50 members\n• Active community\n• No NSFW content\n• Active staff team"
+      },
+      {
+        "name": "⏱️ Response Time",
+        "value": "We aim to review all applications within 48 hours."
+      }
+    ],
+    "footer": "DivinePartners • Applications are reviewed by our staff team"
+  },
+  "questions": [
+    {
+      "id": "server_name",
+      "label": "Server Name",
+      "placeholder": "Enter your Discord server name",
+      "style": "SHORT",
+      "required": true,
+      "maxLength": 100
+    },
+    {
+      "id": "server_invite",
+      "label": "Permanent Invite Link",
+      "placeholder": "https://discord.gg/...",
+      "style": "SHORT",
+      "required": true,
+      "maxLength": 100
+    },
+    {
+      "id": "member_count",
+      "label": "Member Count",
+      "placeholder": "How many members does your server have?",
+      "style": "SHORT",
+      "required": true,
+      "maxLength": 20
+    },
+    {
+      "id": "server_description",
+      "label": "Server Description",
+      "placeholder": "Tell us about your server, what it's about, its community, etc.",
+      "style": "PARAGRAPH",
+      "required": true,
+      "maxLength": 1000
+    },
+    {
+      "id": "partnership_benefits",
+      "label": "Partnership Benefits",
+      "placeholder": "What can you offer DivineSMP?",
+      "style": "PARAGRAPH",
+      "required": true,
+      "maxLength": 500
+    },
+    {
+      "id": "server_ad",
+      "label": "Server Advertisement Message",
+      "placeholder": "Paste your server advertisement message here.",
+      "style": "PARAGRAPH",
+      "required": true,
+      "maxLength": 1000
+    }
+  ]
+}
