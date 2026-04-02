@@ -2,7 +2,7 @@ const http = require('http');
 
 /**
  * Starts a tiny HTTP server so Render keeps the process alive
- * and UptimeRobot can ping it every 5 minutes to prevent sleep.
+ * and UptimeRobot can ping it.
  */
 function startKeepAlive() {
   const PORT = process.env.PORT || 3000;
@@ -12,7 +12,7 @@ function startKeepAlive() {
     res.end('DivinePartners bot is alive ✅');
   });
 
-  server.listen(PORT, () => {
+  server.listen(PORT, '0.0.0.0', () => {
     console.log(`🌐 Keep-alive server running on port ${PORT}`);
   });
 }
